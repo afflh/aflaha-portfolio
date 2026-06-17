@@ -65,30 +65,38 @@ export default function Hero() {
           </div>
         </Reveal>
 
-        <Reveal className="relative min-w-[262px] flex-[0_1_400px]">
-          <div className="relative aspect-[4/5] w-full">
-            {/* red backing panel */}
-            <div className="absolute inset-[6%_5%_0_11%] rounded-[6px] bg-red-accent" />
-            {/* subtle grid overlay on the panel */}
-            <div
-              className="absolute inset-[6%_5%_0_11%] rounded-[6px]"
-              style={{
-                backgroundImage:
-                  'linear-gradient(rgba(255,255,255,0.16) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.16) 1px,transparent 1px)',
-                backgroundSize: '34px 34px',
-              }}
-            />
-            {/* black corner brackets */}
-            <span className="absolute -left-[10px] -top-[10px] z-[3] h-[50px] w-[50px] border-l-[5px] border-t-[5px] border-ink" />
-            <span className="absolute -right-[10px] bottom-4 z-[3] h-[50px] w-[50px] border-b-[5px] border-r-[5px] border-ink" />
-            <img
-              src="./assets/headshot.png"
-              alt="Aflaha Fathinah Fatahillah"
-              className="absolute inset-0 z-[2] h-full w-full object-contain"
-              style={{ objectPosition: 'bottom center', filter: 'drop-shadow(0 16px 26px rgba(0,0,0,0.20))' }}
-            />
-            <span className="absolute -left-[26px] top-1/2 z-[3] origin-center -translate-y-1/2 -rotate-90 whitespace-nowrap font-archivo text-[10.5px] font-bold uppercase tracking-[0.3em] text-warm-400">
-              Aflaha Fathinah / 2026
+        <Reveal className="relative mx-auto min-w-[262px] flex-[0_1_400px]">
+          {/* The red panel is the precise reference box: everything (grid,
+              photo, corner brackets) is aligned to its edges so the framing
+              stays symmetrical at every screen size. */}
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[400px]">
+            <div className="absolute inset-0 overflow-hidden rounded-[8px] bg-red-accent">
+              {/* subtle grid overlay, clipped to the panel */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage:
+                    'linear-gradient(rgba(255,255,255,0.16) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.16) 1px,transparent 1px)',
+                  backgroundSize: '34px 34px',
+                }}
+              />
+              {/* portrait — contain so the whole figure stays visible and is
+                  not cropped; anchored to the bottom of the panel */}
+              <img
+                src="./assets/headshot.png"
+                alt="Aflaha Fathinah Fatahillah"
+                className="absolute inset-x-0 bottom-0 top-0 mx-auto h-full w-full object-contain object-bottom"
+                style={{ filter: 'drop-shadow(0 12px 22px rgba(0,0,0,0.18))' }}
+              />
+            </div>
+
+            {/* black corner brackets, locked to the panel corners */}
+            <span className="absolute -left-[10px] -top-[10px] z-[3] h-[46px] w-[46px] border-l-[5px] border-t-[5px] border-ink" />
+            <span className="absolute -bottom-[10px] -right-[10px] z-[3] h-[46px] w-[46px] border-b-[5px] border-r-[5px] border-ink" />
+
+            {/* vertical caption, sits just outside the left edge */}
+            <span className="absolute -left-[40px] top-1/2 z-[3] hidden origin-center -translate-y-1/2 -rotate-90 whitespace-nowrap font-archivo text-[10px] font-bold uppercase tracking-[0.28em] text-warm-500 lg:block">
+              Aflaha / 2026
             </span>
           </div>
         </Reveal>

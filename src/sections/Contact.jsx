@@ -1,22 +1,8 @@
-import { useState } from 'react'
 import Reveal from '../components/Reveal'
 import Eyebrow from '../components/Eyebrow'
 import { PROFILE, LINKS, PDF_URL } from '../data/site'
 
 export default function Contact() {
-  const [copied, setCopied] = useState(false)
-
-  const copyEmail = async () => {
-    try {
-      await navigator.clipboard?.writeText(PROFILE.email)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 1700)
-    } catch {
-      // Clipboard unavailable; fall back to opening the mail client.
-      window.location.href = LINKS.email
-    }
-  }
-
   return (
     <section id="contact" className="bg-ink px-[clamp(20px,6vw,96px)] py-[clamp(80px,10vw,160px)] text-cream">
       <div className="mx-auto max-w-[1000px]">
@@ -41,13 +27,12 @@ export default function Contact() {
 
         {/* Primary contact actions */}
         <Reveal className="mb-11 flex flex-wrap gap-3">
-          <button
-            type="button"
-            onClick={copyEmail}
+          <a
+            href={LINKS.email}
             className="inline-flex items-center gap-[10px] rounded-[8px] bg-red-accent px-[26px] py-4 font-archivo text-[15px] font-bold text-white transition-colors hover:bg-red-accentdark"
           >
-            {copied ? 'Email copied to clipboard' : 'Contact Me'}
-          </button>
+            {PROFILE.email}
+          </a>
           <a
             href={LINKS.github}
             target="_blank"
