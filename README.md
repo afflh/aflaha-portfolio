@@ -1,4 +1,4 @@
-# Aflaha Fathinah Fatahillah — Portfolio
+# Aflaha Fathinah Fatahillah - Portfolio
 
 Personal portfolio website. React + Vite + Tailwind CSS + React Router.
 Editorial style (black / warm off-white / red accent), data-driven content, and
@@ -37,7 +37,7 @@ public/
 ## Editing content
 
 All copy and project data live in `src/data/*`. Add or edit a project in
-`src/data/projects.js` — both its homepage card and its `/projects/:slug`
+`src/data/projects.js`; both its homepage card and its `/projects/:slug`
 case-study page update automatically.
 
 ## Before publishing

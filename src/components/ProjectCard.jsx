@@ -2,8 +2,8 @@ import { useNavigate } from 'react-router-dom'
 
 // Homepage project card. Every card is structurally identical so all five
 // projects read as equally important.
-// The whole card routes to the case study; the external "View …" link inside
-// opens the real project (GitHub / paper / docs) in a new tab.
+// The whole card routes to the case study; the external link inside opens the
+// real project (GitHub / paper / documentation) in a new tab.
 export default function ProjectCard({ project }) {
   const p = project
   const navigate = useNavigate()
@@ -20,7 +20,7 @@ export default function ProjectCard({ project }) {
           goToCaseStudy()
         }
       }}
-      aria-label={`${p.title} — view case study`}
+      aria-label={`${p.title} - view case study`}
       className="group flex w-full cursor-pointer flex-col overflow-hidden rounded-[14px] border border-warm-200 bg-white text-inherit no-underline transition-[border-color,transform,box-shadow] duration-[250ms] hover:-translate-y-1 hover:border-ink hover:shadow-[0_16px_32px_rgba(0,0,0,0.09)]"
     >
       <div className="relative aspect-[16/11] overflow-hidden border-b border-warm-200 bg-[#EDEAE3]">
@@ -45,19 +45,19 @@ export default function ProjectCard({ project }) {
 
         <div className="mb-4 flex flex-col gap-2">
           <Meta label="Role" value={p.roleShort} />
-          <Meta label="Tech" value={p.tools.join(' · ')} />
+          <Meta label="Tech" value={p.tools.join(' / ')} />
         </div>
 
         <div className="mt-auto">
           <div className="mb-4 flex items-start gap-[9px] border-t border-warm-200 pt-[14px]">
-            <span className="font-extrabold leading-[1.4] text-red-accent">→</span>
+            <span className="font-extrabold leading-[1.4] text-red-accent">-&gt;</span>
             <span className="text-[13.5px] leading-[1.5] text-warm-800">
               <strong className="text-ink">{p.evidenceLabel}:</strong> {p.evidenceShort}
             </span>
           </div>
           <div className="flex flex-wrap items-center justify-between gap-3">
             <span className="inline-flex items-center gap-2 font-archivo text-[13.5px] font-bold tracking-[0.02em] text-ink">
-              View case study <span className="text-red-accent transition-transform group-hover:translate-x-1">→</span>
+              View Case Study <span className="text-red-accent transition-transform group-hover:translate-x-1">-&gt;</span>
             </span>
             {p.link && (
               <a
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }) {
                 onClick={(e) => e.stopPropagation()}
                 className="inline-flex items-center gap-1 rounded-[6px] border border-warm-300 px-3 py-[7px] font-archivo text-[12px] font-bold uppercase tracking-[0.04em] text-warm-700 no-underline transition-colors hover:border-ink hover:text-ink"
               >
-                {p.linkLabel} <span className="text-red-accent">↗</span>
+                {p.linkLabel} <span className="text-red-accent">-&gt;</span>
               </a>
             )}
           </div>

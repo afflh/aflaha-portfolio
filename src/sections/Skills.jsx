@@ -9,12 +9,12 @@ export default function Skills() {
       <div className="mx-auto max-w-content">
         <Reveal>
           <Eyebrow dark className="mb-[30px]">
-            02 / Skills &amp; Tools
+            02 / SKILLS &amp; TOOLS
           </Eyebrow>
         </Reveal>
 
         <Reveal as="h2" className="m-0 mb-12 max-w-[760px] font-archivo text-[clamp(30px,4.4vw,56px)] font-black leading-none tracking-[-0.02em]">
-          What I work with — and how I think.
+          What I work with, and how I think.
         </Reveal>
 
         {/* Technical skill cards */}
@@ -40,9 +40,9 @@ export default function Skills() {
             <ul className="m-0 flex list-none flex-col gap-[14px] p-0">
               {CREATIVE_STRENGTHS.map(([title, desc]) => (
                 <li key={title} className="flex items-start gap-3">
-                  <span className="flex-none font-extrabold text-red-accent">—</span>
+                  <span className="flex-none font-extrabold text-red-accent">-</span>
                   <span className="text-[16px] leading-[1.55] text-[#D8D3CA]">
-                    <strong className="text-white">{title}</strong> — {desc}
+                    <strong className="text-white">{title}</strong> - {desc}
                   </span>
                 </li>
               ))}

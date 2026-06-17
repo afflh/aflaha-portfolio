@@ -2,7 +2,7 @@ import Reveal from '../components/Reveal'
 import { PDF_URL } from '../data/site'
 import { scrollToSection } from '../lib/scrollToSection'
 
-const PILLS = ['Computer Science', 'Software Engineer Intern', 'AI & Human-Centered Products']
+const PILLS = ['Computer Science', 'Software Engineer Intern', 'AI & Product-Minded Builder']
 
 // Hero: editorial intro with the real headshot framed by red panel + corner brackets.
 export default function Hero() {
@@ -16,7 +16,7 @@ export default function Hero() {
           <div className="mb-[22px] flex items-center gap-3">
             <span className="inline-block h-[13px] w-[13px] bg-red-accent" />
             <span className="font-archivo text-[12.5px] font-bold uppercase tracking-[0.24em] text-warm-700">
-              Portfolio 2026 · Apple Developer Academy
+              Portfolio 2026 / Apple Developer Academy
             </span>
           </div>
 
@@ -28,9 +28,8 @@ export default function Hero() {
           </h1>
 
           <p className="m-0 mb-[30px] max-w-[560px] text-[clamp(17px,1.7vw,21px)] leading-[1.6] text-warm-800">
-            A Computer Science student &amp; Software Engineer Intern building human-centered,
-            AI-assisted products people don&rsquo;t just admire — they{' '}
-            <strong className="text-ink">actually use and rely on</strong>.
+            A Computer Science student and Software Engineer Intern building human-centered,
+            AI-aware software for people who need technology to be useful, reliable, and clear.
           </p>
 
           <div className="mb-[34px] flex flex-wrap gap-2">
@@ -53,7 +52,7 @@ export default function Hero() {
               }}
               className="inline-flex items-center gap-[10px] rounded-[7px] bg-red-accent px-7 py-[15px] font-archivo text-[15px] font-bold text-white no-underline transition-colors hover:bg-red-accentdark"
             >
-              View projects <span>→</span>
+              View Case Study <span>-&gt;</span>
             </a>
             <a
               href={PDF_URL}
@@ -61,7 +60,7 @@ export default function Hero() {
               rel="noopener"
               className="inline-flex items-center gap-[10px] rounded-[7px] border-[1.5px] border-ink bg-transparent px-7 py-[15px] font-archivo text-[15px] font-bold text-ink no-underline transition-colors hover:bg-ink hover:text-cream"
             >
-              ↓ Download Portfolio PDF
+              Download Portfolio PDF
             </a>
           </div>
         </Reveal>
@@ -89,7 +88,7 @@ export default function Hero() {
               style={{ objectPosition: 'bottom center', filter: 'drop-shadow(0 16px 26px rgba(0,0,0,0.20))' }}
             />
             <span className="absolute -left-[26px] top-1/2 z-[3] origin-center -translate-y-1/2 -rotate-90 whitespace-nowrap font-archivo text-[10.5px] font-bold uppercase tracking-[0.3em] text-warm-400">
-              Aflaha Fathinah · 2026
+              Aflaha Fathinah / 2026
             </span>
           </div>
         </Reveal>

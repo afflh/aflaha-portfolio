@@ -12,7 +12,7 @@ export default function Contact() {
       setCopied(true)
       setTimeout(() => setCopied(false), 1700)
     } catch {
-      // Clipboard unavailable — fall back to opening the mail client.
+      // Clipboard unavailable; fall back to opening the mail client.
       window.location.href = LINKS.email
     }
   }
@@ -22,12 +22,12 @@ export default function Contact() {
       <div className="mx-auto max-w-[1000px]">
         <Reveal>
           <Eyebrow dark className="mb-[26px]">
-            06 / Contact
+            06 / CONTACT
           </Eyebrow>
         </Reveal>
 
         <Reveal as="h2" className="m-0 mb-2 font-display text-[clamp(40px,8vw,96px)] font-normal uppercase leading-[0.95]">
-          Let&rsquo;s connect &amp; build
+          Let&rsquo;s connect and build
           <br />
           something that
           <br />
@@ -35,8 +35,8 @@ export default function Contact() {
         </Reveal>
 
         <Reveal as="p" className="m-0 mb-10 mt-[18px] max-w-[560px] text-[clamp(16px,1.6vw,20px)] leading-[1.6] text-[#B8B3AA]">
-          Open to collaboration, research, and opportunities where technology can be genuinely useful
-          for real people.
+          Open to software engineering, AI, product, research, internship, and hackathon
+          opportunities where technology can be genuinely useful for real people.
         </Reveal>
 
         {/* Primary contact actions */}
@@ -46,7 +46,7 @@ export default function Contact() {
             onClick={copyEmail}
             className="inline-flex items-center gap-[10px] rounded-[8px] bg-red-accent px-[26px] py-4 font-archivo text-[15px] font-bold text-white transition-colors hover:bg-red-accentdark"
           >
-            {copied ? '✓ Copied to clipboard' : <>✉&nbsp; {PROFILE.email}</>}
+            {copied ? 'Email copied to clipboard' : 'Contact Me'}
           </button>
           <a
             href={LINKS.github}
@@ -54,7 +54,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-[9px] rounded-[8px] border-[1.5px] border-[#44423E] bg-transparent px-6 py-4 font-archivo text-[15px] font-bold text-cream no-underline transition-colors hover:border-cream"
           >
-            ⌥&nbsp; GitHub <span className="text-warm-400">↗</span>
+            View GitHub <span className="text-warm-400">-&gt;</span>
           </a>
           <a
             href={LINKS.whatsapp}
@@ -62,7 +62,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-[9px] rounded-[8px] border-[1.5px] border-[#44423E] bg-transparent px-6 py-4 font-archivo text-[15px] font-bold text-cream no-underline transition-colors hover:border-cream"
           >
-            ⌕&nbsp; WhatsApp <span className="text-warm-400">↗</span>
+            WhatsApp <span className="text-warm-400">-&gt;</span>
           </a>
           <a
             href={PDF_URL}
@@ -70,14 +70,14 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-[9px] rounded-[8px] border-[1.5px] border-[#44423E] bg-transparent px-6 py-4 font-archivo text-[15px] font-bold text-cream no-underline transition-colors hover:border-cream"
           >
-            ↓&nbsp; Download Portfolio PDF
+            Download Portfolio PDF
           </a>
         </Reveal>
 
         {/* Secondary links */}
         <Reveal className="border-t border-[#2A2A2A] pt-8">
           <div className="mb-[18px] font-archivo text-[11px] font-bold uppercase tracking-[0.18em] text-[#5E5A52]">
-            Also here
+            Secondary Channels
           </div>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] gap-4">
             <a href={LINKS.instagram} target="_blank" rel="noopener" className="no-underline transition-opacity hover:opacity-70">
@@ -110,7 +110,7 @@ export default function Contact() {
           <span className="font-display text-[15px] uppercase tracking-[0.5px] text-cream">
             {PROFILE.name}
           </span>
-          <span className="text-[13px] text-warm-500">Portfolio 2026 · Apple Developer Academy</span>
+          <span className="text-[13px] text-warm-500">Portfolio 2026 / Apple Developer Academy</span>
         </div>
       </div>
     </section>

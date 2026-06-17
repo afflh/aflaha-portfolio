@@ -9,7 +9,7 @@ export default function Experience() {
       <div className="mx-auto max-w-narrow">
         <Reveal>
           <Eyebrow dark className="mb-[30px]">
-            04 / Experience
+            04 / EXPERIENCE
           </Eyebrow>
         </Reveal>
 

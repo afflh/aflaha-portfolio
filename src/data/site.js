@@ -7,10 +7,10 @@ export const PROFILE = {
   shortName: 'Aflaha F.',
   initials: 'AF',
   role: 'Computer Science Student & Software Engineer Intern',
-  focus: 'AI · Software Development · Human-Centered Products',
+  focus: 'AI / Software Development / Human-Centered Products',
   email: 'aflahafth@gmail.com',
   phone: '+62 853-1454-6587',
-  location: 'Jakarta, Indonesia · Binus University',
+  location: 'Jakarta, Indonesia / Bina Nusantara University',
   currently: 'Software Engineer Intern @ PT Admin Pintar Kita',
 }
 
@@ -24,10 +24,10 @@ export const LINKS = {
 
 export const NAV_ITEMS = [
   { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
+  { label: 'Skills & Tools', href: '#skills' },
   { label: 'Journey', href: '#journey' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Certs', href: '#certifications' },
+  { label: 'Certifications', href: '#certifications' },
   { label: 'Contact', href: '#contact' },
 ]

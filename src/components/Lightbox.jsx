@@ -49,7 +49,7 @@ export default function Lightbox({ image, onClose }) {
             aria-label="Close"
             className="flex h-9 w-9 flex-none items-center justify-center rounded-full border border-warm-300 text-[18px] leading-none text-warm-700 transition-colors hover:border-ink hover:bg-ink hover:text-white"
           >
-            ✕
+            x
           </button>
         </div>
 
@@ -70,7 +70,7 @@ export default function Lightbox({ image, onClose }) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-[7px] bg-red-accent px-5 py-[10px] font-archivo text-[13px] font-bold uppercase tracking-[0.04em] text-white no-underline transition-colors hover:bg-red-accentdark"
           >
-            Open full image <span>↗</span>
+            Open Full Image <span>-&gt;</span>
           </a>
         </div>
       </div>

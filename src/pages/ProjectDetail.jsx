@@ -11,10 +11,10 @@ function NotFound() {
         404
       </p>
       <h1 className="m-0 mb-6 mt-2 font-display text-[clamp(40px,8vw,80px)] uppercase leading-[0.95] text-ink">
-        Project not found
+        Project Not Found
       </h1>
       <Link to="/#projects" className="font-archivo font-bold text-ink underline">
-        ← Back to all projects
+        Back to Projects
       </Link>
     </main>
   )
@@ -69,7 +69,7 @@ export default function ProjectDetail() {
             to="/#projects"
             className="inline-flex items-center gap-2 font-archivo text-[12.5px] font-bold uppercase tracking-[0.14em] text-warm-400 no-underline transition-colors hover:text-cream"
           >
-            ← All projects
+            Back to Projects
           </Link>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -90,7 +90,7 @@ export default function ProjectDetail() {
 
           {p.recognition && (
             <div className="mb-9 inline-flex items-center gap-2 rounded-[8px] border border-[#34332F] bg-[#161616] px-4 py-[10px]">
-              <span className="text-[15px] text-red-accent">★</span>
+              <span className="text-[15px] text-red-accent">*</span>
               <span className="font-archivo text-[13px] font-bold uppercase tracking-[0.1em] text-cream">
                 {p.recognition}
               </span>
@@ -100,7 +100,7 @@ export default function ProjectDetail() {
           <div className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-6 border-t border-[#2A2A2A] pt-8">
             <MetaRow label="Type" value={p.type} />
             <MetaRow label="Role" value={p.role} />
-            <MetaRow label="Tools / Tech" value={p.tools.join(' · ')} />
+            <MetaRow label="Tools / Tech" value={p.tools.join(' / ')} />
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -111,7 +111,7 @@ export default function ProjectDetail() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-[7px] bg-red-accent px-6 py-[13px] font-archivo text-[14px] font-bold text-white no-underline transition-colors hover:bg-red-accentdark"
               >
-                {p.linkLabel || 'View project'} <span>↗</span>
+                {p.linkLabel || 'View Case Study'} <span>-&gt;</span>
               </a>
             )}
             <a
@@ -120,7 +120,7 @@ export default function ProjectDetail() {
               rel="noopener"
               className="inline-flex items-center gap-2 rounded-[7px] border-[1.5px] border-[#44423E] px-6 py-[13px] font-archivo text-[14px] font-bold text-cream no-underline transition-colors hover:border-cream"
             >
-              ↓ Portfolio PDF
+              Download Portfolio PDF
             </a>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function ProjectDetail() {
             <ul className="m-0 flex list-none flex-col gap-3 p-0">
               {p.evidence.map((e) => (
                 <li key={e} className="flex items-start gap-3">
-                  <span className="mt-[2px] flex-none font-extrabold text-red-accent">→</span>
+                  <span className="mt-[2px] flex-none font-extrabold text-red-accent">-&gt;</span>
                   <span className="text-[clamp(15px,1.4vw,17px)] leading-[1.6] text-warm-800">{e}</span>
                 </li>
               ))}
@@ -221,7 +221,7 @@ export default function ProjectDetail() {
               className="group flex flex-col rounded-[12px] border border-warm-200 bg-cream px-6 py-5 no-underline transition-colors hover:border-ink"
             >
               <span className="font-archivo text-[11px] font-bold uppercase tracking-[0.16em] text-warm-400">
-                ← Previous
+                Previous Case Study
               </span>
               <span className="mt-1 font-archivo text-[20px] font-black text-ink">{prev.title}</span>
             </Link>
@@ -234,7 +234,7 @@ export default function ProjectDetail() {
               className="group flex flex-col rounded-[12px] border border-warm-200 bg-cream px-6 py-5 text-right no-underline transition-colors hover:border-ink"
             >
               <span className="font-archivo text-[11px] font-bold uppercase tracking-[0.16em] text-warm-400">
-                Next →
+                Next Case Study
               </span>
               <span className="mt-1 font-archivo text-[20px] font-black text-ink">{next.title}</span>
             </Link>

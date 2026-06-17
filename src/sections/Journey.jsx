@@ -43,12 +43,12 @@ export default function Journey() {
           <Eyebrow className="mb-[18px]">Journey Into Tech</Eyebrow>
         </Reveal>
         <Reveal as="h2" className="m-0 mb-[14px] font-archivo text-[clamp(30px,4.4vw,56px)] font-black leading-none tracking-[-0.02em] text-ink">
-          From curiosity to purpose.
+          From curiosity to responsible product building.
         </Reveal>
         <Reveal as="p" className="m-0 mb-14 max-w-[640px] text-[clamp(16px,1.5vw,19px)] leading-[1.7] text-warm-800">
-          I started Computer Science with curiosity, not a fixed direction. Each project taught me to
-          see technology from a new angle — and that building it well means making it useful,
-          meaningful, and responsible for real people.
+          I started Computer Science with curiosity, not a fixed direction. Each project helped me
+          see technology from a new angle and understand that building well means making systems
+          useful, meaningful, and responsible for real people.
         </Reveal>
 
         <div ref={lineRef} className="relative pl-[38px]">

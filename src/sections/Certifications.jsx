@@ -9,7 +9,7 @@ function CertCard({ item, badge, onOpen }) {
     <button
       type="button"
       onClick={() => onOpen(item)}
-      aria-label={`View certificate: ${item.title} — ${item.sub}`}
+      aria-label={`View certificate: ${item.title} - ${item.sub}`}
       className="block w-full overflow-hidden rounded-[12px] border border-warm-200 bg-white text-left text-inherit no-underline transition-[border-color,box-shadow] duration-[250ms] hover:border-ink hover:shadow-[0_12px_26px_rgba(0,0,0,0.08)]"
     >
       <div
@@ -18,7 +18,7 @@ function CertCard({ item, badge, onOpen }) {
       >
         <img
           src={item.img}
-          alt={`${item.title} — ${item.sub}`}
+          alt={`${item.title} - ${item.sub}`}
           loading="lazy"
           className="block h-full w-full object-cover"
           style={{ objectPosition: item.position || 'center' }}
@@ -27,7 +27,7 @@ function CertCard({ item, badge, onOpen }) {
       <div className="px-5 py-[18px]">
         {badge && (
           <div className="mb-[6px] flex items-center gap-2">
-            <span className="text-[15px] text-red-accent">★</span>
+            <span className="text-[15px] text-red-accent">*</span>
             <span className="font-archivo text-[11px] font-bold uppercase tracking-[0.14em] text-red-accent">
               {item.badge}
             </span>
@@ -47,7 +47,7 @@ export default function Certifications() {
     <section id="certifications" className="bg-cream px-[clamp(20px,6vw,96px)] py-[clamp(72px,9vw,150px)]">
       <div className="mx-auto max-w-narrow">
         <Reveal>
-          <Eyebrow className="mb-[30px]">05 / Certifications &amp; Recognition</Eyebrow>
+          <Eyebrow className="mb-[30px]">05 / CERTIFICATIONS &amp; RECOGNITION</Eyebrow>
         </Reveal>
 
         <Reveal className="mb-11">

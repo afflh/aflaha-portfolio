@@ -3,7 +3,7 @@ import Eyebrow from '../components/Eyebrow'
 import ProjectCard from '../components/ProjectCard'
 import { PROJECTS } from '../data/projects'
 
-// Centerpiece. All five cards in one uniform grid — equal weight, no highlighting.
+// Centerpiece. All five cards in one uniform grid with equal weight.
 export default function Projects() {
   return (
     <section
@@ -12,14 +12,14 @@ export default function Projects() {
     >
       <div className="mx-auto max-w-content">
         <Reveal>
-          <Eyebrow className="mb-[18px]">03 / Projects</Eyebrow>
+          <Eyebrow className="mb-[18px]">03 / PROJECTS</Eyebrow>
         </Reveal>
         <Reveal as="h2" className="m-0 mb-[14px] font-archivo text-[clamp(30px,4.4vw,56px)] font-black leading-none tracking-[-0.02em] text-ink">
-          A growth journey, not a list.
+          Five projects, one growth arc.
         </Reveal>
         <Reveal as="p" className="m-0 mb-12 max-w-[620px] text-[clamp(16px,1.5vw,19px)] leading-[1.7] text-warm-800">
-          Five projects, one through-line — from UI/UX exploration and product development, to AI
-          research, market validation, and real-world AI-assisted systems.{' '}
+          UI/UX exploration, software and product development, responsible AI research,
+          entrepreneurship and market validation, and real-world AI-assisted systems.{' '}
           <span className="text-warm-400">Open any card for the full case study.</span>
         </Reveal>
 

@@ -79,7 +79,7 @@ export default function Nav() {
             rel="noopener"
             className="inline-flex items-center gap-2 rounded-[6px] bg-red-accent px-4 py-[10px] font-archivo text-[12.5px] font-bold uppercase tracking-[0.04em] text-white no-underline transition-colors hover:bg-red-accentdark"
           >
-            ↓ PDF
+            Download Portfolio PDF
           </a>
           {/* Mobile menu toggle */}
           <button
