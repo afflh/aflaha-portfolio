@@ -52,7 +52,7 @@ export default function Hero() {
               }}
               className="inline-flex items-center gap-[10px] rounded-[7px] bg-red-accent px-7 py-[15px] font-archivo text-[15px] font-bold text-white no-underline transition-colors hover:bg-red-accentdark"
             >
-              View Case Study <span>-&gt;</span>
+              View Projects <span>-&gt;</span>
             </a>
             <a
               href={PDF_URL}

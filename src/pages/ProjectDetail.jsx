@@ -111,7 +111,7 @@ export default function ProjectDetail() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-[7px] bg-red-accent px-6 py-[13px] font-archivo text-[14px] font-bold text-white no-underline transition-colors hover:bg-red-accentdark"
               >
-                {p.linkLabel || 'View Case Study'} <span>-&gt;</span>
+                {p.linkLabel || 'View Project'} <span>-&gt;</span>
               </a>
             )}
             <a

@@ -20,7 +20,7 @@ export default function ProjectCard({ project }) {
           goToCaseStudy()
         }
       }}
-      aria-label={`${p.title} - view case study`}
+      aria-label={`${p.title} - view project`}
       className="group flex w-full cursor-pointer flex-col overflow-hidden rounded-[14px] border border-warm-200 bg-white text-inherit no-underline transition-[border-color,transform,box-shadow] duration-[250ms] hover:-translate-y-1 hover:border-ink hover:shadow-[0_16px_32px_rgba(0,0,0,0.09)]"
     >
       <div className="relative aspect-[16/11] overflow-hidden border-b border-warm-200 bg-[#EDEAE3]">
@@ -57,7 +57,7 @@ export default function ProjectCard({ project }) {
           </div>
           <div className="flex flex-wrap items-center justify-between gap-3">
             <span className="inline-flex items-center gap-2 font-archivo text-[13.5px] font-bold tracking-[0.02em] text-ink">
-              View Case Study <span className="text-red-accent transition-transform group-hover:translate-x-1">-&gt;</span>
+              View Project <span className="text-red-accent transition-transform group-hover:translate-x-1">-&gt;</span>
             </span>
             {p.link && (
               <a
