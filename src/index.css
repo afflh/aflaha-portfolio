@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: #f4f2ee;
+}
+
+::selection {
+  background: #ea3324;
+  color: #fff;
+}
+
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #cfc9bd;
+  border-radius: 8px;
+}
+
+@layer components {
+  /* Section eyebrow: red square + uppercase label */
+  .eyebrow {
+    @apply flex items-center gap-3;
+  }
+  .eyebrow-square {
+    @apply inline-block h-[13px] w-[13px] bg-red-accent;
+  }
+  .eyebrow-label {
+    @apply font-archivo font-extrabold text-[13px] tracking-[0.22em] uppercase;
+  }
+}
+
+/* Scroll-reveal: content is always present; this is a subtle entrance only. */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
